@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        p:not(#para2){
+            padding: 20px;
+            background-color: aquamarine;
+        }
+        div>p{
+            background-color: royalblue;
+            color: white;
+        }
+        div:hover{
+            background-color: red;
+            color: white;
+        }
+        div>p :not(:hover){
+            background-color:blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <p id="para1">para 1</p>
+    <p id="para2">para 2</p>
+    <p id="para3">para 3</p>
+</body>
+</html>
