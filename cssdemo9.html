@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .container{
+            /*width: 700px;*/
+            height: 600px;
+            border: 1px solid dodgerblue;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .container>div{
+            height: 100px;
+            width: 200px;
+            text-align: center;
+            color: aliceblue;
+            font-size: x-large;
+        }
+        .container>div:nth-child(odd){
+            background-color: rebeccapurple;
+        }
+        .container>div:nth-child(even){
+            background-color:purple;
+        }
+        #mydev1{
+            order: 1;
+            /*flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100px;*/
+            flex: 3 1 0%;
+        }
+        #mydev2{
+            order: 2;
+            /*flex-grow: 3;
+            flex-shrink: 1;
+            flex-basis: 200px;*/
+            flex: 1 1 200px;
+        } 
+        #mydev3{
+            order: 3;
+            /*flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 400px;*/
+            flex: 1 1 100%;
+        }
+    </style>
+</head>
+<body bgcolor="black">
+    <div class="container">
+        <div id="mydiv">div 1</div>
+        <div id="mydiv">div 2</div>
+        <div id="mydiv">div 3</div>
+    </div>    
+    
+</body>
+</html>
