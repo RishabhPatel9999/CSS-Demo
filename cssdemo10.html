@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .myNav{
+            background-color: teal;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .myNav>img{
+            width: 160px;
+            height: auto;
+        }
+        .myNav>ul{
+            list-style-type: none;
+            display: flex;
+        }
+        .myNav>ul li>a{
+            text-decoration: none;
+            display: block;
+            padding: 15px 20px;
+            font-size: large;
+        }
+        .myNav>ul li>a:hover{
+            background-color: blue;
+            color: red;
+        }
+        @media screen and (min-width: 768px) and (max-width: 991px){
+            .myNav{
+                justify-content: center;
+            }
+        }
+        @media screen and(max-width: 767px) {
+            .myNav{
+                flex-direction: column;
+            }
+            .myNav>ul{
+                flex-direction: column;
+                
+            }
+            .myNav>ul>li{
+                text-align: center;
+                border-bottom: 1px solid purple;
+            }
+            .myNav>img{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body bgcolor="black">
+
+    <nav class="myNav">
+        <img src="./Screenshot 2025-07-07 091643.png"/>
+        <!--ul>(li>a{Link $})*5-->
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Our Teams</a></li>
+            <li><a href="">Our Projects</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>
